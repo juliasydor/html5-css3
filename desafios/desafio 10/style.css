@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: ('Android');
+    src: url('fontes/idroid.otf') format(opentype);
+    font-weight: normal;
+}
+
+:root {
+    --cor1: #92db97;
+    --cor2: #5ac964b7;
+    --cor3: #54965a;
+    --cor4: #233D25;
+    --cor5: #0C4711;
+
+    --font-padrão: arial, helvetica, sans-serif; 
+    --font-destaque: 'Android', cursive;
+    --font-bebas: 'Bebas Neue';
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
+}
+body {
+    background-color:var(--cor1);
+    font-family: var(--font-padrão);
+}
+header {
+    background-color: var(--cor5);
+    padding: 20px;
+    
+    background-image: linear-gradient(to bottom, var(--cor3), transparent);
+}
+header > h1 {
+    font-family: var(--font-destaque);
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+}
+header > p {
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+}
+nav {
+    background-color: var(--cor4);
+    padding: 5px;
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+nav > a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: var(--cor3);
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--cor2);
+    transition-duration: 0.5s;
+}
+main {
+    background-color: white;
+    padding: 10px;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    line-height: 1.5em;
+    text-indent: 1em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
+}
+main p {
+    max-width: 1000px;
+    min-width: 300px;
+}
+main h1 {
+    text-align: center;
+}
+main h2 {
+    background-color: var(--cor4);
+    text-align: left;
+    background-image: linear-gradient(to right, var(--cor3), transparent);
+}
+main img {
+    width: 100%;
+}
+img.pequena {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+aside h2 {
+    background-color: var(--cor4);
+}
+aside {
+    padding: 10px;
+    background-color: var(--cor2);
+    border-radius: 5px;
+    margin: auto;
+    max-width: 800px;
+    min-width: 320px;
+}
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\00A0\2714\00A0\00A0';
+    margin: 10px;  
+}
+aside p {
+    max-width: 800px;
+    min-width: 320px;
+}
+footer {
+    background-color: var(--cor4);
+    color: white;
+    margin-top: 10px;
+    padding: 5px;
+}
+footer a {
+    text-decoration: none;
+    color: var(--cor3);
+}
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+footer p {
+    background-color: var(--cor4);
+    width: 100%;
+}
